@@ -1,0 +1,270 @@
+/* &display=swap */
+@import "null_style.css";
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap);
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+
+body {
+   font-family: "Lato", sans-serif;
+   font-size: 16px;
+   line-height: 160%;
+   color: #424551;
+}
+[class*="-conteiner"] {
+   max-width: 840px;
+   margin: 0 auto;
+   padding: 15px;
+}
+.header-conteiner {
+   margin-bottom: 80px;
+}
+.main-block {
+   margin-bottom: 60px;
+}
+.main {
+   margin-bottom: 30px;
+}
+.paragraphs-block {
+   margin-bottom: 50px;
+}
+.paragraphs-block *:last-child {
+   margin-bottom: 0px;
+}
+.title {
+   font-size: 46px;
+   font-weight: 900;
+   line-height: 130%;
+   color: #1E212C;
+   margin-bottom: 26px;
+}
+.date-block {
+   margin-bottom: 20px;
+}
+.date-block span:not(:last-child) {
+   margin-right: 24px;
+}
+.date {
+   color: #787A80;
+   background: url(../img/figma/calender.svg)left no-repeat;
+   padding-left: 24px;
+}
+.clock {
+   color: #787A80;
+   background: url(../img/figma/clock.svg)left no-repeat;
+   padding-left: 24px;
+}
+.share-block {
+   margin-bottom: 20px;
+}
+.share-block a:not(:last-child) {
+   margin-right: 12px;
+}
+.facebook::before {
+   content: "";
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background: url(../img/figma/facebook.svg) no-repeat;
+}
+.facebook:hover::before {
+   content: "";
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background: url(../img/figma/facebook-blue.svg) no-repeat;
+}
+.twitter::before {
+   content: "";
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background: url(../img/figma/twitter.svg)0 3px no-repeat;
+}
+.twitter:hover::before {
+   content: "";
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background: url(../img/figma/twitter-blue.svg)0 3px no-repeat;
+}
+.in::before {
+   content: "";
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background: url(../img/figma/in.svg) no-repeat;
+}
+.in:hover::before {
+   content: "";
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background: url(../img/figma/in-blue.svg) no-repeat;
+}
+.share {
+   color: #1E212C;
+   font-weight: 700;
+   margin-right: 12px ;
+}
+.bold {
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 150%;
+   color: #1E212C;
+   margin-bottom: 24px;
+}
+.regular {
+   margin-bottom: 24px;
+}
+.braces {
+   padding-left: 58px;
+   background: url(../img/figma/Quotation/braces.svg) no-repeat;
+   margin-bottom: 48px;
+}
+.list {
+   margin-bottom: 24px;
+}
+.list li:not(:last-child) {
+   margin-bottom: 4px;
+}
+.item {
+   min-height: 16px;
+   padding-left: 32px;
+   background: url(../img/figma/like.svg)left no-repeat;
+}
+
+
+/*=== Game ===*/
+.game-start {
+   width: 50px;
+   height: 50px;
+   background-color: tomato;
+   color: white;
+   padding-left: 5px;
+}
+.game-start:hover {
+   width: 100%;
+}
+.game-1 {
+   width: 40px;
+   height: 100px;
+   background-color: turquoise;
+   margin: 0 0 0 auto;
+   visibility: hidden;
+}
+.game-start:hover + .game-1 {
+   visibility: visible;
+}
+.game-1:hover {
+   visibility: visible;
+}
+.game-1-checkpoint {
+   width: 80px;
+   height: 80px;
+   background-color: violet;
+   margin: 0 0 0 auto;
+   text-align: center;
+   visibility: hidden;
+}
+.game-1:hover + .game-1-checkpoint {
+   visibility: visible;
+}
+.game-1-checkpoint:hover {
+   visibility: visible;
+}
+.check {
+   color: white;
+   font-size: 25px;
+   font-weight: 700;
+}
+.check:hover {
+   color: brown;
+   text-decoration: underline;
+}
+.img-candy {
+   visibility: hidden;
+   width: 30px;
+}
+.img-candy:target {
+   visibility: visible;
+}
+.save {
+   font-weight: 900;
+   color: red;
+}
+.game-2 {
+   height: 30px;
+   background-color: cadetblue;
+}
+.game-2 {
+   visibility: hidden;
+}
+.game-1-checkpoint:hover + .game-2 {
+   visibility: visible;
+}
+.game-2:hover {
+   visibility: visible;
+}
+.game-3 {
+   width: 30px;
+   height: 200px;
+   background-color: gold;
+   visibility: hidden;
+}
+.game-2:hover + .game-3 {
+   visibility: visible;
+}
+.game-3:hover {
+   visibility: visible;
+}
+.game-4 {
+   width: 51%;
+   height: 15px;
+   background-color: greenyellow;
+   visibility: hidden;
+}
+.game-3:hover + .game-4 {
+   visibility: visible;
+}
+.game-4:hover {
+   visibility: visible;
+}
+.game-5 {
+   width: 15px;
+   height: 200px;
+   background-color: rosybrown;
+   margin: 0 auto;
+   visibility: hidden;
+}
+.game-4:hover + .game-5{
+   visibility: visible;
+}
+.game-5:hover {
+   visibility: visible;
+}
+.win-win {
+   width: 500px;
+   margin: 0 auto;
+   visibility: hidden;
+   text-align: center;
+}
+.game-5:hover + .win-win{
+   visibility: visible;
+}
+.win-win:hover {
+   visibility: visible;
+}
+.prize-click {
+   font-size: 40px;
+   font-weight: 700;
+   color: red;
+}
+.gif {
+   visibility: hidden;
+}
+.gif:target {
+   visibility: visible;
+}
